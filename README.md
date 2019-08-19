@@ -1,4 +1,32 @@
-# TVDB
+# TVDBClient
+
+How to initialise the apiClient
+
+```swift
+    let apiClient = TVDBClient(apikey: "XXX", userkey: "XXX", username: "XXX")
+```
+
+Example of search of a serie
+```swift
+    let searchRequest = TVDB.Search.GetSearchSeries.Request.init(name: "The Walking Dead")
+    apiClient.makeRequest(request: searchRequest) { apiResponse in
+      if let obj = try? apiResponse.result.get().success {
+        print(obj)
+      }
+    }
+```
+
+Example of extracting actors from a serie
+```swift
+    let searchSeriesByActorsRequest = TVDB.Series.GetSeriesByIdActors.Request(id: 153021)
+    apiClient.makeRequest(request: searchSeriesByActorsRequest) { apiResponse in
+      if let obj = try? apiResponse.result.get().success {
+        print(obj)
+      }
+    }
+```
+
+### TVDB
 
 This is an api generated from a OpenAPI 3.0 spec with [SwagGen](https://github.com/yonaskolb/SwagGen)
 
