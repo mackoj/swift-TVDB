@@ -33,7 +33,9 @@ public struct TVDB {
     public static var safeArrayDecoding = true
 
     /// Used to encode Dates when uses as string params
-    public static let dateEncodingFormatter = DateFormatter(formatString: "yyyy-MM-dd'T'HH:mm:ssZZZZZ")
+	/// 2018-04-02 04:21:24
+    // public static let dateEncodingFormatter = DateFormatter(formatString: "yyyy-MM-dd'T'HH:mm:ssZZZZZ")
+    public static let dateEncodingFormatter = DateFormatter(formatString: "yyyy-MM-dd HH:mm:ss")
 
     public static let version = "2.2.0"
 
@@ -47,6 +49,6 @@ public struct TVDB {
 
     public enum Server {
 
-        public static let main = "/"
+        public static let main = "https://api.thetvdb.com"
     }
 }
