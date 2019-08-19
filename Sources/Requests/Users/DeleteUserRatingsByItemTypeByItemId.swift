@@ -47,10 +47,10 @@ extension TVDB.Users {
         }
 
         public enum Response: APIResponseValue, CustomStringConvertible, CustomDebugStringConvertible {
-            public typealias SuccessType = TVDBUserRatingsDataNoLinksEmptyArray
+            public typealias SuccessType = TVDBUserRatingsDataNoLinks
 
             /** Returns OK if the delete was successful */
-            case status200(TVDBUserRatingsDataNoLinksEmptyArray)
+            case status200(TVDBUserRatingsDataNoLinks)
 
             /** Returned if your JWT token is missing or expired */
             case status401(TVDBNotAuthorized)
@@ -58,7 +58,7 @@ extension TVDB.Users {
             /** Returned if no rating is found that matches your given parameters */
             case status404(TVDBNotFound)
 
-            public var success: TVDBUserRatingsDataNoLinksEmptyArray? {
+            public var success: TVDBUserRatingsDataNoLinks? {
                 switch self {
                 case .status200(let response): return response
                 default: return nil
@@ -91,7 +91,7 @@ extension TVDB.Users {
 
             public init(statusCode: Int, data: Data, decoder: ResponseDecoder) throws {
                 switch statusCode {
-                case 200: self = try .status200(decoder.decode(TVDBUserRatingsDataNoLinksEmptyArray.self, from: data))
+                case 200: self = try .status200(decoder.decode(TVDBUserRatingsDataNoLinks.self, from: data))
                 case 401: self = try .status401(decoder.decode(TVDBNotAuthorized.self, from: data))
                 case 404: self = try .status404(decoder.decode(TVDBNotFound.self, from: data))
                 default: throw APIClientError.unexpectedStatusCode(statusCode: statusCode, data: data)

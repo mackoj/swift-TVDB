@@ -1,9 +1,10 @@
-// swift-tools-version:4.0
+// swift-tools-version:5.0
 
 import PackageDescription
 
 let package = Package(
     name: "TVDB",
+	platforms: [.iOS(.v12)],
     products: [
         .library(name: "TVDB", targets: ["TVDB"])
     ],
@@ -14,5 +15,6 @@ let package = Package(
         .target(name: "TVDB", dependencies: [
           "Alamofire",
         ], path: "Sources")
-    ]
+    ],
+	swiftLanguageVersions: [.v4_2, .v5]
 )
