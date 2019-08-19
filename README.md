@@ -26,7 +26,7 @@ Example of extracting actors from a serie
     }
 ```
 
-# TVDB
+### TVDB
 
 This is an api generated from a OpenAPI 3.0 spec with [SwagGen](https://github.com/yonaskolb/SwagGen)
 
