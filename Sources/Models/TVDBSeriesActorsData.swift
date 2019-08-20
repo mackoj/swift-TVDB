@@ -40,7 +40,7 @@ public struct TVDBSeriesActorsData: APIModel {
     public init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: StringCodingKey.self)
 
-        id = try container.decodeIfPresent("id")
+        id = try container.decode("id")
         image = try container.decodeIfPresent("image")
         imageAdded = try container.decodeIfPresent("imageAdded")
         imageAuthor = try container.decodeIfPresent("imageAuthor")
@@ -54,7 +54,7 @@ public struct TVDBSeriesActorsData: APIModel {
     public func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: StringCodingKey.self)
 
-        try container.encodeIfPresent(id, forKey: "id")
+        try container.encode(id, forKey: "id")
         try container.encodeIfPresent(image, forKey: "image")
         try container.encodeIfPresent(imageAdded, forKey: "imageAdded")
         try container.encodeIfPresent(imageAuthor, forKey: "imageAuthor")

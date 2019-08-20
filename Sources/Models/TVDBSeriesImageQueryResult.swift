@@ -67,7 +67,7 @@ public struct TVDBSeriesImageQueryResult: APIModel {
         let container = try decoder.container(keyedBy: StringCodingKey.self)
 
         fileName = try container.decodeIfPresent("fileName")
-        id = try container.decodeIfPresent("id")
+        id = try container.decode("id")
         keyType = try container.decodeIfPresent("keyType")
         languageId = try container.decodeIfPresent("languageId")
         ratingsInfo = try container.decodeIfPresent("ratingsInfo")
@@ -80,7 +80,7 @@ public struct TVDBSeriesImageQueryResult: APIModel {
         var container = encoder.container(keyedBy: StringCodingKey.self)
 
         try container.encodeIfPresent(fileName, forKey: "fileName")
-        try container.encodeIfPresent(id, forKey: "id")
+        try container.encode(id, forKey: "id")
         try container.encodeIfPresent(keyType, forKey: "keyType")
         try container.encodeIfPresent(languageId, forKey: "languageId")
         try container.encodeIfPresent(ratingsInfo, forKey: "ratingsInfo")

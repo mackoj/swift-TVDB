@@ -27,7 +27,7 @@ public struct TVDBLanguage: APIModel {
 
         abbreviation = try container.decodeIfPresent("abbreviation")
         englishName = try container.decodeIfPresent("englishName")
-        id = try container.decodeIfPresent("id")
+        id = try container.decode("id")
         name = try container.decodeIfPresent("name")
     }
 
@@ -36,7 +36,7 @@ public struct TVDBLanguage: APIModel {
 
         try container.encodeIfPresent(abbreviation, forKey: "abbreviation")
         try container.encodeIfPresent(englishName, forKey: "englishName")
-        try container.encodeIfPresent(id, forKey: "id")
+        try container.encode(id, forKey: "id")
         try container.encodeIfPresent(name, forKey: "name")
     }
 

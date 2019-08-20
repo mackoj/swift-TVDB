@@ -19,14 +19,14 @@ public struct TVDBUpdate: APIModel {
     public init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: StringCodingKey.self)
 
-        id = try container.decodeIfPresent("id")
+        id = try container.decode("id")
         lastUpdated = try container.decodeIfPresent("lastUpdated")
     }
 
     public func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: StringCodingKey.self)
 
-        try container.encodeIfPresent(id, forKey: "id")
+        try container.encode(id, forKey: "id")
         try container.encodeIfPresent(lastUpdated, forKey: "lastUpdated")
     }
 
