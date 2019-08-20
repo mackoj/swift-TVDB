@@ -11,11 +11,11 @@ public struct TVDBLanguage: APIModel {
 
     public let englishName: String?
 
-    public let id: Int?
+    public let id: Int
 
     public let name: String?
 
-    public init(abbreviation: String? = nil, englishName: String? = nil, id: Int? = nil, name: String? = nil) {
+    public init(abbreviation: String? = nil, englishName: String? = nil, id: Int = nil, name: String? = nil) {
         self.abbreviation = abbreviation
         self.englishName = englishName
         self.id = id

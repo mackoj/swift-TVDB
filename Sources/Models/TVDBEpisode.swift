@@ -39,7 +39,7 @@ public struct TVDBEpisode: APIModel {
 
     public let guestStars: [String]?
 
-    public let id: Int?
+    public let id: Int
 
     public let imdbId: String?
 
@@ -69,7 +69,7 @@ public struct TVDBEpisode: APIModel {
 
     public let writers: [String]?
 
-    public init(absoluteNumber: Int? = nil, airedEpisodeNumber: Int? = nil, airedSeason: Int? = nil, airsAfterSeason: Int? = nil, airsBeforeEpisode: Int? = nil, airsBeforeSeason: Int? = nil, director: String? = nil, directors: [String]? = nil, dvdChapter: Double? = nil, dvdDiscid: String? = nil, dvdEpisodeNumber: Double? = nil, dvdSeason: Int? = nil, episodeName: String? = nil, filename: String? = nil, firstAired: String? = nil, guestStars: [String]? = nil, id: Int? = nil, imdbId: String? = nil, lastUpdated: Int? = nil, lastUpdatedBy: String? = nil, overview: String? = nil, productionCode: String? = nil, seriesId: String? = nil, showUrl: String? = nil, siteRating: Double? = nil, siteRatingCount: Int? = nil, thumbAdded: String? = nil, thumbAuthor: Int? = nil, thumbHeight: String? = nil, thumbWidth: String? = nil, writers: [String]? = nil) {
+    public init(absoluteNumber: Int? = nil, airedEpisodeNumber: Int? = nil, airedSeason: Int? = nil, airsAfterSeason: Int? = nil, airsBeforeEpisode: Int? = nil, airsBeforeSeason: Int? = nil, director: String? = nil, directors: [String]? = nil, dvdChapter: Double? = nil, dvdDiscid: String? = nil, dvdEpisodeNumber: Double? = nil, dvdSeason: Int? = nil, episodeName: String? = nil, filename: String? = nil, firstAired: String? = nil, guestStars: [String]? = nil, id: Int = nil, imdbId: String? = nil, lastUpdated: Int? = nil, lastUpdatedBy: String? = nil, overview: String? = nil, productionCode: String? = nil, seriesId: String? = nil, showUrl: String? = nil, siteRating: Double? = nil, siteRatingCount: Int? = nil, thumbAdded: String? = nil, thumbAuthor: Int? = nil, thumbHeight: String? = nil, thumbWidth: String? = nil, writers: [String]? = nil) {
         self.absoluteNumber = absoluteNumber
         self.airedEpisodeNumber = airedEpisodeNumber
         self.airedSeason = airedSeason

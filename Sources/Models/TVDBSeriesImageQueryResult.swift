@@ -9,7 +9,7 @@ public struct TVDBSeriesImageQueryResult: APIModel {
 
     public let fileName: String?
 
-    public let id: Int?
+    public let id: Int
 
     public let keyType: String?
 
@@ -52,7 +52,7 @@ public struct TVDBSeriesImageQueryResult: APIModel {
 
     }
 
-    public init(fileName: String? = nil, id: Int? = nil, keyType: String? = nil, languageId: Int? = nil, ratingsInfo: RatingsInfo? = nil, resolution: String? = nil, subKey: String? = nil, thumbnail: String? = nil) {
+    public init(fileName: String? = nil, id: Int = nil, keyType: String? = nil, languageId: Int? = nil, ratingsInfo: RatingsInfo? = nil, resolution: String? = nil, subKey: String? = nil, thumbnail: String? = nil) {
         self.fileName = fileName
         self.id = id
         self.keyType = keyType
