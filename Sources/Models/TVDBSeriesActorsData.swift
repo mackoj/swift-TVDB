@@ -25,7 +25,7 @@ public struct TVDBSeriesActorsData: APIModel {
 
     public let sortOrder: Int?
 
-    public init(id: Int = nil, image: String? = nil, imageAdded: String? = nil, imageAuthor: Int? = nil, lastUpdated: String? = nil, name: String? = nil, role: String? = nil, seriesId: Int? = nil, sortOrder: Int? = nil) {
+    public init(id: Int, image: String? = nil, imageAdded: String? = nil, imageAuthor: Int? = nil, lastUpdated: String? = nil, name: String? = nil, role: String? = nil, seriesId: Int? = nil, sortOrder: Int? = nil) {
         self.id = id
         self.image = image
         self.imageAdded = imageAdded

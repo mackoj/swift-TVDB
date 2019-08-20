@@ -25,7 +25,7 @@ public struct TVDBSeriesSearchResult: APIModel {
 
     public let status: String?
 
-    public init(aliases: [String]? = nil, banner: String? = nil, firstAired: String? = nil, id: Int = nil, network: String? = nil, overview: String? = nil, seriesName: String? = nil, slug: String? = nil, status: String? = nil) {
+    public init(aliases: [String]? = nil, banner: String? = nil, firstAired: String? = nil, id: Int, network: String? = nil, overview: String? = nil, seriesName: String? = nil, slug: String? = nil, status: String? = nil) {
         self.aliases = aliases
         self.banner = banner
         self.firstAired = firstAired

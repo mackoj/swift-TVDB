@@ -11,7 +11,7 @@ public struct TVDBUpdate: APIModel {
 
     public let lastUpdated: Int?
 
-    public init(id: Int = nil, lastUpdated: Int? = nil) {
+    public init(id: Int, lastUpdated: Int? = nil) {
         self.id = id
         self.lastUpdated = lastUpdated
     }

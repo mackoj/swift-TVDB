@@ -29,7 +29,7 @@ public struct TVDBBasicEpisode: APIModel {
 
     public let overview: String?
 
-    public init(absoluteNumber: Int? = nil, airedEpisodeNumber: Int? = nil, airedSeason: Int? = nil, dvdEpisodeNumber: Int? = nil, dvdSeason: Int? = nil, episodeName: String? = nil, firstAired: String? = nil, id: Int = nil, language: TVDBEpisodeLanguageInfo? = nil, lastUpdated: Int? = nil, overview: String? = nil) {
+    public init(absoluteNumber: Int? = nil, airedEpisodeNumber: Int? = nil, airedSeason: Int? = nil, dvdEpisodeNumber: Int? = nil, dvdSeason: Int? = nil, episodeName: String? = nil, firstAired: String? = nil, id: Int, language: TVDBEpisodeLanguageInfo? = nil, lastUpdated: Int? = nil, overview: String? = nil) {
         self.absoluteNumber = absoluteNumber
         self.airedEpisodeNumber = airedEpisodeNumber
         self.airedSeason = airedSeason

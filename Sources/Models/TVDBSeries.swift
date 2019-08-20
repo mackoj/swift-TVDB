@@ -51,7 +51,7 @@ public struct TVDBSeries: APIModel {
 
     public let zap2itId: String?
 
-    public init(added: String? = nil, airsDayOfWeek: String? = nil, airsTime: String? = nil, aliases: [String]? = nil, banner: String? = nil, firstAired: String? = nil, genre: [String]? = nil, id: Int = nil, imdbId: String? = nil, lastUpdated: Int? = nil, network: String? = nil, networkId: String? = nil, overview: String? = nil, rating: String? = nil, runtime: String? = nil, seriesId: String? = nil, seriesName: String? = nil, siteRating: Double? = nil, siteRatingCount: Int? = nil, slug: String? = nil, status: String? = nil, zap2itId: String? = nil) {
+    public init(added: String? = nil, airsDayOfWeek: String? = nil, airsTime: String? = nil, aliases: [String]? = nil, banner: String? = nil, firstAired: String? = nil, genre: [String]? = nil, id: Int, imdbId: String? = nil, lastUpdated: Int? = nil, network: String? = nil, networkId: String? = nil, overview: String? = nil, rating: String? = nil, runtime: String? = nil, seriesId: String? = nil, seriesName: String? = nil, siteRating: Double? = nil, siteRatingCount: Int? = nil, slug: String? = nil, status: String? = nil, zap2itId: String? = nil) {
         self.added = added
         self.airsDayOfWeek = airsDayOfWeek
         self.airsTime = airsTime
