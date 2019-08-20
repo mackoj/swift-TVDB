@@ -15,6 +15,7 @@ struct TVDBRequestBehaviour : RequestBehaviour {
     if let JWTtoken = UserDefaults.standard.JWTtoken {
       newURLRequest.addValue("Bearer \(JWTtoken)", forHTTPHeaderField: "Authorization")
     }
+    newURLRequest.addValue("en", forHTTPHeaderField: "Accept-Language")
     return newURLRequest
   }
   
