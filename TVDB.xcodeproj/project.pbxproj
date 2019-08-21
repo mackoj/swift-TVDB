@@ -1,0 +1,990 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0FAAE8CD230D449D004A2B39 /* Model+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FAAE8CC230D449D004A2B39 /* Model+Extension.swift */; };
+		OBJ_139 /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_108 /* AFError.swift */; };
+		OBJ_140 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_109 /* Alamofire.swift */; };
+		OBJ_141 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_110 /* DispatchQueue+Alamofire.swift */; };
+		OBJ_142 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_111 /* MultipartFormData.swift */; };
+		OBJ_143 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_112 /* NetworkReachabilityManager.swift */; };
+		OBJ_144 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_113 /* Notifications.swift */; };
+		OBJ_145 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_114 /* ParameterEncoding.swift */; };
+		OBJ_146 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_115 /* Request.swift */; };
+		OBJ_147 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_116 /* Response.swift */; };
+		OBJ_148 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_117 /* ResponseSerialization.swift */; };
+		OBJ_149 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_118 /* Result.swift */; };
+		OBJ_150 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_119 /* ServerTrustPolicy.swift */; };
+		OBJ_151 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_120 /* SessionDelegate.swift */; };
+		OBJ_152 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_121 /* SessionManager.swift */; };
+		OBJ_153 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_122 /* TaskDelegate.swift */; };
+		OBJ_154 /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_123 /* Timeline.swift */; };
+		OBJ_155 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_124 /* Validation.swift */; };
+		OBJ_162 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_107 /* Package.swift */; };
+		OBJ_168 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_8 /* API.swift */; };
+		OBJ_169 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* APIClient.swift */; };
+		OBJ_170 /* APIClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* APIClientError.swift */; };
+		OBJ_171 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* APIRequest.swift */; };
+		OBJ_172 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* APIResponse.swift */; };
+		OBJ_173 /* APIResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* APIResult.swift */; };
+		OBJ_174 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* APIService.swift */; };
+		OBJ_175 /* AnyCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* AnyCodable.swift */; };
+		OBJ_176 /* Coding.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* Coding.swift */; };
+		OBJ_177 /* TVDBAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* TVDBAuth.swift */; };
+		OBJ_178 /* TVDBBasicEpisode.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* TVDBBasicEpisode.swift */; };
+		OBJ_179 /* TVDBConflict.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* TVDBConflict.swift */; };
+		OBJ_180 /* TVDBEpisode.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* TVDBEpisode.swift */; };
+		OBJ_181 /* TVDBEpisodeDataQueryParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* TVDBEpisodeDataQueryParams.swift */; };
+		OBJ_182 /* TVDBEpisodeLanguageInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* TVDBEpisodeLanguageInfo.swift */; };
+		OBJ_183 /* TVDBEpisodeRecordData.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* TVDBEpisodeRecordData.swift */; };
+		OBJ_184 /* TVDBFilterKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* TVDBFilterKeys.swift */; };
+		OBJ_185 /* TVDBJSONErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* TVDBJSONErrors.swift */; };
+		OBJ_186 /* TVDBLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* TVDBLanguage.swift */; };
+		OBJ_187 /* TVDBLanguageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* TVDBLanguageData.swift */; };
+		OBJ_188 /* TVDBLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* TVDBLinks.swift */; };
+		OBJ_189 /* TVDBNotAuthorized.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* TVDBNotAuthorized.swift */; };
+		OBJ_190 /* TVDBNotFound.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* TVDBNotFound.swift */; };
+		OBJ_191 /* TVDBSeries.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* TVDBSeries.swift */; };
+		OBJ_192 /* TVDBSeriesActors.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* TVDBSeriesActors.swift */; };
+		OBJ_193 /* TVDBSeriesActorsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* TVDBSeriesActorsData.swift */; };
+		OBJ_194 /* TVDBSeriesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_35 /* TVDBSeriesData.swift */; };
+		OBJ_195 /* TVDBSeriesEpisodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* TVDBSeriesEpisodes.swift */; };
+		OBJ_196 /* TVDBSeriesEpisodesQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* TVDBSeriesEpisodesQuery.swift */; };
+		OBJ_197 /* TVDBSeriesEpisodesQueryParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_38 /* TVDBSeriesEpisodesQueryParams.swift */; };
+		OBJ_198 /* TVDBSeriesEpisodesSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* TVDBSeriesEpisodesSummary.swift */; };
+		OBJ_199 /* TVDBSeriesImageQueryResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_40 /* TVDBSeriesImageQueryResult.swift */; };
+		OBJ_200 /* TVDBSeriesImageQueryResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_41 /* TVDBSeriesImageQueryResults.swift */; };
+		OBJ_201 /* TVDBSeriesImagesCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_42 /* TVDBSeriesImagesCount.swift */; };
+		OBJ_202 /* TVDBSeriesImagesCounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_43 /* TVDBSeriesImagesCounts.swift */; };
+		OBJ_203 /* TVDBSeriesImagesQueryParam.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* TVDBSeriesImagesQueryParam.swift */; };
+		OBJ_204 /* TVDBSeriesImagesQueryParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_45 /* TVDBSeriesImagesQueryParams.swift */; };
+		OBJ_205 /* TVDBSeriesSearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_46 /* TVDBSeriesSearchResult.swift */; };
+		OBJ_206 /* TVDBSeriesSearchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_47 /* TVDBSeriesSearchResults.swift */; };
+		OBJ_207 /* TVDBToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_48 /* TVDBToken.swift */; };
+		OBJ_208 /* TVDBUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_49 /* TVDBUpdate.swift */; };
+		OBJ_209 /* TVDBUpdateData.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_50 /* TVDBUpdateData.swift */; };
+		OBJ_210 /* TVDBUpdateDataQueryParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_51 /* TVDBUpdateDataQueryParams.swift */; };
+		OBJ_211 /* TVDBUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_52 /* TVDBUser.swift */; };
+		OBJ_212 /* TVDBUserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_53 /* TVDBUserData.swift */; };
+		OBJ_213 /* TVDBUserFavorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_54 /* TVDBUserFavorites.swift */; };
+		OBJ_214 /* TVDBUserFavoritesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_55 /* TVDBUserFavoritesData.swift */; };
+		OBJ_215 /* TVDBUserRatings.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_56 /* TVDBUserRatings.swift */; };
+		OBJ_216 /* TVDBUserRatingsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_57 /* TVDBUserRatingsData.swift */; };
+		OBJ_217 /* TVDBUserRatingsDataNoLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_58 /* TVDBUserRatingsDataNoLinks.swift */; };
+		OBJ_218 /* TVDBUserRatingsQueryParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_59 /* TVDBUserRatingsQueryParams.swift */; };
+		OBJ_219 /* RequestBehaviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_60 /* RequestBehaviour.swift */; };
+		OBJ_220 /* GetRefreshToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_63 /* GetRefreshToken.swift */; };
+		OBJ_221 /* PostLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_64 /* PostLogin.swift */; };
+		OBJ_222 /* GetEpisodesById.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_66 /* GetEpisodesById.swift */; };
+		OBJ_223 /* GetLanguages.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_68 /* GetLanguages.swift */; };
+		OBJ_224 /* GetLanguagesById.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_69 /* GetLanguagesById.swift */; };
+		OBJ_225 /* GetSearchSeries.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_71 /* GetSearchSeries.swift */; };
+		OBJ_226 /* GetSearchSeriesParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_72 /* GetSearchSeriesParams.swift */; };
+		OBJ_227 /* GetSeriesById.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_74 /* GetSeriesById.swift */; };
+		OBJ_228 /* GetSeriesByIdActors.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_75 /* GetSeriesByIdActors.swift */; };
+		OBJ_229 /* GetSeriesByIdEpisodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_76 /* GetSeriesByIdEpisodes.swift */; };
+		OBJ_230 /* GetSeriesByIdEpisodesQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_77 /* GetSeriesByIdEpisodesQuery.swift */; };
+		OBJ_231 /* GetSeriesByIdEpisodesQueryParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_78 /* GetSeriesByIdEpisodesQueryParams.swift */; };
+		OBJ_232 /* GetSeriesByIdEpisodesSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_79 /* GetSeriesByIdEpisodesSummary.swift */; };
+		OBJ_233 /* GetSeriesByIdFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_80 /* GetSeriesByIdFilter.swift */; };
+		OBJ_234 /* GetSeriesByIdFilterParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_81 /* GetSeriesByIdFilterParams.swift */; };
+		OBJ_235 /* GetSeriesByIdImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_82 /* GetSeriesByIdImages.swift */; };
+		OBJ_236 /* GetSeriesByIdImagesQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_83 /* GetSeriesByIdImagesQuery.swift */; };
+		OBJ_237 /* GetSeriesByIdImagesQueryParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_84 /* GetSeriesByIdImagesQueryParams.swift */; };
+		OBJ_238 /* HeadSeriesById.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_85 /* HeadSeriesById.swift */; };
+		OBJ_239 /* GetUpdatedQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_87 /* GetUpdatedQuery.swift */; };
+		OBJ_240 /* GetUpdatedQueryParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_88 /* GetUpdatedQueryParams.swift */; };
+		OBJ_241 /* DeleteUserFavoritesById.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_90 /* DeleteUserFavoritesById.swift */; };
+		OBJ_242 /* DeleteUserRatingsByItemTypeByItemId.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_91 /* DeleteUserRatingsByItemTypeByItemId.swift */; };
+		OBJ_243 /* GetUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_92 /* GetUser.swift */; };
+		OBJ_244 /* GetUserFavorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_93 /* GetUserFavorites.swift */; };
+		OBJ_245 /* GetUserRatings.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_94 /* GetUserRatings.swift */; };
+		OBJ_246 /* GetUserRatingsQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_95 /* GetUserRatingsQuery.swift */; };
+		OBJ_247 /* GetUserRatingsQueryParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_96 /* GetUserRatingsQueryParams.swift */; };
+		OBJ_248 /* PutUserFavoritesById.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_97 /* PutUserFavoritesById.swift */; };
+		OBJ_249 /* PutUserRatingsByItemTypeByItemIdByItemRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_98 /* PutUserRatingsByItemTypeByItemIdByItemRating.swift */; };
+		OBJ_250 /* TVDBClient+UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_100 /* TVDBClient+UserDefaults.swift */; };
+		OBJ_251 /* TVDBClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_101 /* TVDBClient.swift */; };
+		OBJ_252 /* TVDBModels+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_102 /* TVDBModels+Extension.swift */; };
+		OBJ_253 /* TVDBRequestBehaviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_103 /* TVDBRequestBehaviour.swift */; };
+		OBJ_255 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Alamofire::Alamofire::Product" /* Alamofire.framework */; };
+		OBJ_262 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0FAAE8B9230D4401004A2B39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Alamofire::Alamofire";
+			remoteInfo = Alamofire;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0FAAE8CC230D449D004A2B39 /* Model+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Model+Extension.swift"; sourceTree = "<group>"; };
+		"Alamofire::Alamofire::Product" /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_10 /* APIClientError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientError.swift; sourceTree = "<group>"; };
+		OBJ_100 /* TVDBClient+UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TVDBClient+UserDefaults.swift"; sourceTree = "<group>"; };
+		OBJ_101 /* TVDBClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVDBClient.swift; sourceTree = "<group>"; };
+		OBJ_102 /* TVDBModels+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TVDBModels+Extension.swift"; sourceTree = "<group>"; };
+		OBJ_103 /* TVDBRequestBehaviour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVDBRequestBehaviour.swift; sourceTree = "<group>"; };
+		OBJ_107 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/jeffreymacko/code/swift-TVDB/.build/checkouts/Alamofire/Package.swift"; sourceTree = "<group>"; };
+		OBJ_108 /* AFError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFError.swift; sourceTree = "<group>"; };
+		OBJ_109 /* Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alamofire.swift; sourceTree = "<group>"; };
+		OBJ_11 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		OBJ_110 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		OBJ_111 /* MultipartFormData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipartFormData.swift; sourceTree = "<group>"; };
+		OBJ_112 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		OBJ_113 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		OBJ_114 /* ParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
+		OBJ_115 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		OBJ_116 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		OBJ_117 /* ResponseSerialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseSerialization.swift; sourceTree = "<group>"; };
+		OBJ_118 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		OBJ_119 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		OBJ_12 /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
+		OBJ_120 /* SessionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionDelegate.swift; sourceTree = "<group>"; };
+		OBJ_121 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		OBJ_122 /* TaskDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDelegate.swift; sourceTree = "<group>"; };
+		OBJ_123 /* Timeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timeline.swift; sourceTree = "<group>"; };
+		OBJ_124 /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
+		OBJ_128 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		OBJ_129 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		OBJ_13 /* APIResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResult.swift; sourceTree = "<group>"; };
+		OBJ_130 /* tvdb3.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = tvdb3.yml; sourceTree = "<group>"; };
+		OBJ_131 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		OBJ_132 /* TVDB.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = TVDB.podspec; sourceTree = "<group>"; };
+		OBJ_133 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		OBJ_14 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		OBJ_15 /* AnyCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyCodable.swift; sourceTree = "<group>"; };
+		OBJ_16 /* Coding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coding.swift; sourceTree = "<group>"; };
+		OBJ_18 /* TVDBAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVDBAuth.swift; sourceTree = "<group>"; };
+		OBJ_19 /* TVDBBasicEpisode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVDBBasicEpisode.swift; sourceTree = "<group>"; };
+		OBJ_20 /* TVDBConflict.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVDBConflict.swift; sourceTree = "<group>"; };
+		OBJ_21 /* TVDBEpisode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVDBEpisode.swift; sourceTree = "<group>"; };
+		OBJ_22 /* TVDBEpisodeDataQueryParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVDBEpisodeDataQueryParams.swift; sourceTree = "<group>"; };
+		OBJ_23 /* TVDBEpisodeLanguageInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVDBEpisodeLanguageInfo.swift; sourceTree = "<group>"; };
+		OBJ_24 /* TVDBEpisodeRecordData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVDBEpisodeRecordData.swift; sourceTree = "<group>"; };
+		OBJ_25 /* TVDBFilterKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVDBFilterKeys.swift; sourceTree = "<group>"; };
+		OBJ_26 /* TVDBJSONErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVDBJSONErrors.swift; sourceTree = "<group>"; };
+		OBJ_27 /* TVDBLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVDBLanguage.swift; sourceTree = "<group>"; };
+		OBJ_28 /* TVDBLanguageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVDBLanguageData.swift; sourceTree = "<group>"; };
+		OBJ_29 /* TVDBLinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVDBLinks.swift; sourceTree = "<group>"; };
+		OBJ_30 /* TVDBNotAuthorized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVDBNotAuthorized.swift; sourceTree = "<group>"; };
+		OBJ_31 /* TVDBNotFound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVDBNotFound.swift; sourceTree = "<group>"; };
+		OBJ_32 /* TVDBSeries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVDBSeries.swift; sourceTree = "<group>"; };
+		OBJ_33 /* TVDBSeriesActors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVDBSeriesActors.swift; sourceTree = "<group>"; };
+		OBJ_34 /* TVDBSeriesActorsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVDBSeriesActorsData.swift; sourceTree = "<group>"; };
+		OBJ_35 /* TVDBSeriesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVDBSeriesData.swift; sourceTree = "<group>"; };
+		OBJ_36 /* TVDBSeriesEpisodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVDBSeriesEpisodes.swift; sourceTree = "<group>"; };
+		OBJ_37 /* TVDBSeriesEpisodesQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVDBSeriesEpisodesQuery.swift; sourceTree = "<group>"; };
+		OBJ_38 /* TVDBSeriesEpisodesQueryParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVDBSeriesEpisodesQueryParams.swift; sourceTree = "<group>"; };
+		OBJ_39 /* TVDBSeriesEpisodesSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVDBSeriesEpisodesSummary.swift; sourceTree = "<group>"; };
+		OBJ_40 /* TVDBSeriesImageQueryResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVDBSeriesImageQueryResult.swift; sourceTree = "<group>"; };
+		OBJ_41 /* TVDBSeriesImageQueryResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVDBSeriesImageQueryResults.swift; sourceTree = "<group>"; };
+		OBJ_42 /* TVDBSeriesImagesCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVDBSeriesImagesCount.swift; sourceTree = "<group>"; };
+		OBJ_43 /* TVDBSeriesImagesCounts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVDBSeriesImagesCounts.swift; sourceTree = "<group>"; };
+		OBJ_44 /* TVDBSeriesImagesQueryParam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVDBSeriesImagesQueryParam.swift; sourceTree = "<group>"; };
+		OBJ_45 /* TVDBSeriesImagesQueryParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVDBSeriesImagesQueryParams.swift; sourceTree = "<group>"; };
+		OBJ_46 /* TVDBSeriesSearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVDBSeriesSearchResult.swift; sourceTree = "<group>"; };
+		OBJ_47 /* TVDBSeriesSearchResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVDBSeriesSearchResults.swift; sourceTree = "<group>"; };
+		OBJ_48 /* TVDBToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVDBToken.swift; sourceTree = "<group>"; };
+		OBJ_49 /* TVDBUpdate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVDBUpdate.swift; sourceTree = "<group>"; };
+		OBJ_50 /* TVDBUpdateData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVDBUpdateData.swift; sourceTree = "<group>"; };
+		OBJ_51 /* TVDBUpdateDataQueryParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVDBUpdateDataQueryParams.swift; sourceTree = "<group>"; };
+		OBJ_52 /* TVDBUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVDBUser.swift; sourceTree = "<group>"; };
+		OBJ_53 /* TVDBUserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVDBUserData.swift; sourceTree = "<group>"; };
+		OBJ_54 /* TVDBUserFavorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVDBUserFavorites.swift; sourceTree = "<group>"; };
+		OBJ_55 /* TVDBUserFavoritesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVDBUserFavoritesData.swift; sourceTree = "<group>"; };
+		OBJ_56 /* TVDBUserRatings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVDBUserRatings.swift; sourceTree = "<group>"; };
+		OBJ_57 /* TVDBUserRatingsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVDBUserRatingsData.swift; sourceTree = "<group>"; };
+		OBJ_58 /* TVDBUserRatingsDataNoLinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVDBUserRatingsDataNoLinks.swift; sourceTree = "<group>"; };
+		OBJ_59 /* TVDBUserRatingsQueryParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVDBUserRatingsQueryParams.swift; sourceTree = "<group>"; };
+		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		OBJ_60 /* RequestBehaviour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBehaviour.swift; sourceTree = "<group>"; };
+		OBJ_63 /* GetRefreshToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRefreshToken.swift; sourceTree = "<group>"; };
+		OBJ_64 /* PostLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostLogin.swift; sourceTree = "<group>"; };
+		OBJ_66 /* GetEpisodesById.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetEpisodesById.swift; sourceTree = "<group>"; };
+		OBJ_68 /* GetLanguages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetLanguages.swift; sourceTree = "<group>"; };
+		OBJ_69 /* GetLanguagesById.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetLanguagesById.swift; sourceTree = "<group>"; };
+		OBJ_71 /* GetSearchSeries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSearchSeries.swift; sourceTree = "<group>"; };
+		OBJ_72 /* GetSearchSeriesParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSearchSeriesParams.swift; sourceTree = "<group>"; };
+		OBJ_74 /* GetSeriesById.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSeriesById.swift; sourceTree = "<group>"; };
+		OBJ_75 /* GetSeriesByIdActors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSeriesByIdActors.swift; sourceTree = "<group>"; };
+		OBJ_76 /* GetSeriesByIdEpisodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSeriesByIdEpisodes.swift; sourceTree = "<group>"; };
+		OBJ_77 /* GetSeriesByIdEpisodesQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSeriesByIdEpisodesQuery.swift; sourceTree = "<group>"; };
+		OBJ_78 /* GetSeriesByIdEpisodesQueryParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSeriesByIdEpisodesQueryParams.swift; sourceTree = "<group>"; };
+		OBJ_79 /* GetSeriesByIdEpisodesSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSeriesByIdEpisodesSummary.swift; sourceTree = "<group>"; };
+		OBJ_8 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		OBJ_80 /* GetSeriesByIdFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSeriesByIdFilter.swift; sourceTree = "<group>"; };
+		OBJ_81 /* GetSeriesByIdFilterParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSeriesByIdFilterParams.swift; sourceTree = "<group>"; };
+		OBJ_82 /* GetSeriesByIdImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSeriesByIdImages.swift; sourceTree = "<group>"; };
+		OBJ_83 /* GetSeriesByIdImagesQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSeriesByIdImagesQuery.swift; sourceTree = "<group>"; };
+		OBJ_84 /* GetSeriesByIdImagesQueryParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSeriesByIdImagesQueryParams.swift; sourceTree = "<group>"; };
+		OBJ_85 /* HeadSeriesById.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadSeriesById.swift; sourceTree = "<group>"; };
+		OBJ_87 /* GetUpdatedQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUpdatedQuery.swift; sourceTree = "<group>"; };
+		OBJ_88 /* GetUpdatedQueryParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUpdatedQueryParams.swift; sourceTree = "<group>"; };
+		OBJ_9 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		OBJ_90 /* DeleteUserFavoritesById.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteUserFavoritesById.swift; sourceTree = "<group>"; };
+		OBJ_91 /* DeleteUserRatingsByItemTypeByItemId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteUserRatingsByItemTypeByItemId.swift; sourceTree = "<group>"; };
+		OBJ_92 /* GetUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUser.swift; sourceTree = "<group>"; };
+		OBJ_93 /* GetUserFavorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUserFavorites.swift; sourceTree = "<group>"; };
+		OBJ_94 /* GetUserRatings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUserRatings.swift; sourceTree = "<group>"; };
+		OBJ_95 /* GetUserRatingsQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUserRatingsQuery.swift; sourceTree = "<group>"; };
+		OBJ_96 /* GetUserRatingsQueryParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUserRatingsQueryParams.swift; sourceTree = "<group>"; };
+		OBJ_97 /* PutUserFavoritesById.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PutUserFavoritesById.swift; sourceTree = "<group>"; };
+		OBJ_98 /* PutUserRatingsByItemTypeByItemIdByItemRating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PutUserRatingsByItemTypeByItemIdByItemRating.swift; sourceTree = "<group>"; };
+		"TVDB::TVDB::Product" /* TVDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TVDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		OBJ_156 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_254 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_255 /* Alamofire.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		OBJ_104 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Tests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_105 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_106 /* Alamofire 4.8.2 */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		OBJ_106 /* Alamofire 4.8.2 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_107 /* Package.swift */,
+				OBJ_108 /* AFError.swift */,
+				OBJ_109 /* Alamofire.swift */,
+				OBJ_110 /* DispatchQueue+Alamofire.swift */,
+				OBJ_111 /* MultipartFormData.swift */,
+				OBJ_112 /* NetworkReachabilityManager.swift */,
+				OBJ_113 /* Notifications.swift */,
+				OBJ_114 /* ParameterEncoding.swift */,
+				OBJ_115 /* Request.swift */,
+				OBJ_116 /* Response.swift */,
+				OBJ_117 /* ResponseSerialization.swift */,
+				OBJ_118 /* Result.swift */,
+				OBJ_119 /* ServerTrustPolicy.swift */,
+				OBJ_120 /* SessionDelegate.swift */,
+				OBJ_121 /* SessionManager.swift */,
+				OBJ_122 /* TaskDelegate.swift */,
+				OBJ_123 /* Timeline.swift */,
+				OBJ_124 /* Validation.swift */,
+			);
+			name = "Alamofire 4.8.2";
+			path = .build/checkouts/Alamofire/Source;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_125 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				"Alamofire::Alamofire::Product" /* Alamofire.framework */,
+				"TVDB::TVDB::Product" /* TVDB.framework */,
+			);
+			name = Products;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		OBJ_17 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_18 /* TVDBAuth.swift */,
+				OBJ_19 /* TVDBBasicEpisode.swift */,
+				OBJ_20 /* TVDBConflict.swift */,
+				OBJ_21 /* TVDBEpisode.swift */,
+				OBJ_22 /* TVDBEpisodeDataQueryParams.swift */,
+				OBJ_23 /* TVDBEpisodeLanguageInfo.swift */,
+				OBJ_24 /* TVDBEpisodeRecordData.swift */,
+				OBJ_25 /* TVDBFilterKeys.swift */,
+				OBJ_26 /* TVDBJSONErrors.swift */,
+				OBJ_27 /* TVDBLanguage.swift */,
+				OBJ_28 /* TVDBLanguageData.swift */,
+				OBJ_29 /* TVDBLinks.swift */,
+				OBJ_30 /* TVDBNotAuthorized.swift */,
+				OBJ_31 /* TVDBNotFound.swift */,
+				OBJ_32 /* TVDBSeries.swift */,
+				OBJ_33 /* TVDBSeriesActors.swift */,
+				OBJ_34 /* TVDBSeriesActorsData.swift */,
+				OBJ_35 /* TVDBSeriesData.swift */,
+				OBJ_36 /* TVDBSeriesEpisodes.swift */,
+				OBJ_37 /* TVDBSeriesEpisodesQuery.swift */,
+				OBJ_38 /* TVDBSeriesEpisodesQueryParams.swift */,
+				OBJ_39 /* TVDBSeriesEpisodesSummary.swift */,
+				OBJ_40 /* TVDBSeriesImageQueryResult.swift */,
+				OBJ_41 /* TVDBSeriesImageQueryResults.swift */,
+				OBJ_42 /* TVDBSeriesImagesCount.swift */,
+				OBJ_43 /* TVDBSeriesImagesCounts.swift */,
+				OBJ_44 /* TVDBSeriesImagesQueryParam.swift */,
+				OBJ_45 /* TVDBSeriesImagesQueryParams.swift */,
+				OBJ_46 /* TVDBSeriesSearchResult.swift */,
+				OBJ_47 /* TVDBSeriesSearchResults.swift */,
+				OBJ_48 /* TVDBToken.swift */,
+				OBJ_49 /* TVDBUpdate.swift */,
+				OBJ_50 /* TVDBUpdateData.swift */,
+				OBJ_51 /* TVDBUpdateDataQueryParams.swift */,
+				OBJ_52 /* TVDBUser.swift */,
+				OBJ_53 /* TVDBUserData.swift */,
+				OBJ_54 /* TVDBUserFavorites.swift */,
+				OBJ_55 /* TVDBUserFavoritesData.swift */,
+				OBJ_56 /* TVDBUserRatings.swift */,
+				OBJ_57 /* TVDBUserRatingsData.swift */,
+				OBJ_58 /* TVDBUserRatingsDataNoLinks.swift */,
+				OBJ_59 /* TVDBUserRatingsQueryParams.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		OBJ_5 /*  */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_6 /* Package.swift */,
+				OBJ_7 /* Sources */,
+				OBJ_104 /* Tests */,
+				OBJ_105 /* Dependencies */,
+				OBJ_125 /* Products */,
+				OBJ_128 /* LICENSE */,
+				OBJ_129 /* Cartfile */,
+				OBJ_130 /* tvdb3.yml */,
+				OBJ_131 /* README.md */,
+				OBJ_132 /* TVDB.podspec */,
+				OBJ_133 /* Info.plist */,
+			);
+			name = "";
+			sourceTree = "<group>";
+		};
+		OBJ_61 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_62 /* Authentication */,
+				OBJ_65 /* Episodes */,
+				OBJ_67 /* Languages */,
+				OBJ_70 /* Search */,
+				OBJ_73 /* Series */,
+				OBJ_86 /* Updates */,
+				OBJ_89 /* Users */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		OBJ_62 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_63 /* GetRefreshToken.swift */,
+				OBJ_64 /* PostLogin.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		OBJ_65 /* Episodes */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_66 /* GetEpisodesById.swift */,
+			);
+			path = Episodes;
+			sourceTree = "<group>";
+		};
+		OBJ_67 /* Languages */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_68 /* GetLanguages.swift */,
+				OBJ_69 /* GetLanguagesById.swift */,
+			);
+			path = Languages;
+			sourceTree = "<group>";
+		};
+		OBJ_7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				0FAAE8CC230D449D004A2B39 /* Model+Extension.swift */,
+				OBJ_8 /* API.swift */,
+				OBJ_9 /* APIClient.swift */,
+				OBJ_10 /* APIClientError.swift */,
+				OBJ_11 /* APIRequest.swift */,
+				OBJ_12 /* APIResponse.swift */,
+				OBJ_13 /* APIResult.swift */,
+				OBJ_14 /* APIService.swift */,
+				OBJ_15 /* AnyCodable.swift */,
+				OBJ_16 /* Coding.swift */,
+				OBJ_17 /* Models */,
+				OBJ_60 /* RequestBehaviour.swift */,
+				OBJ_61 /* Requests */,
+				OBJ_99 /* TVDBClient */,
+			);
+			path = Sources;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_70 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_71 /* GetSearchSeries.swift */,
+				OBJ_72 /* GetSearchSeriesParams.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		OBJ_73 /* Series */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_74 /* GetSeriesById.swift */,
+				OBJ_75 /* GetSeriesByIdActors.swift */,
+				OBJ_76 /* GetSeriesByIdEpisodes.swift */,
+				OBJ_77 /* GetSeriesByIdEpisodesQuery.swift */,
+				OBJ_78 /* GetSeriesByIdEpisodesQueryParams.swift */,
+				OBJ_79 /* GetSeriesByIdEpisodesSummary.swift */,
+				OBJ_80 /* GetSeriesByIdFilter.swift */,
+				OBJ_81 /* GetSeriesByIdFilterParams.swift */,
+				OBJ_82 /* GetSeriesByIdImages.swift */,
+				OBJ_83 /* GetSeriesByIdImagesQuery.swift */,
+				OBJ_84 /* GetSeriesByIdImagesQueryParams.swift */,
+				OBJ_85 /* HeadSeriesById.swift */,
+			);
+			path = Series;
+			sourceTree = "<group>";
+		};
+		OBJ_86 /* Updates */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_87 /* GetUpdatedQuery.swift */,
+				OBJ_88 /* GetUpdatedQueryParams.swift */,
+			);
+			path = Updates;
+			sourceTree = "<group>";
+		};
+		OBJ_89 /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_90 /* DeleteUserFavoritesById.swift */,
+				OBJ_91 /* DeleteUserRatingsByItemTypeByItemId.swift */,
+				OBJ_92 /* GetUser.swift */,
+				OBJ_93 /* GetUserFavorites.swift */,
+				OBJ_94 /* GetUserRatings.swift */,
+				OBJ_95 /* GetUserRatingsQuery.swift */,
+				OBJ_96 /* GetUserRatingsQueryParams.swift */,
+				OBJ_97 /* PutUserFavoritesById.swift */,
+				OBJ_98 /* PutUserRatingsByItemTypeByItemIdByItemRating.swift */,
+			);
+			path = Users;
+			sourceTree = "<group>";
+		};
+		OBJ_99 /* TVDBClient */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_100 /* TVDBClient+UserDefaults.swift */,
+				OBJ_101 /* TVDBClient.swift */,
+				OBJ_102 /* TVDBModels+Extension.swift */,
+				OBJ_103 /* TVDBRequestBehaviour.swift */,
+			);
+			path = TVDBClient;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		"Alamofire::Alamofire" /* Alamofire */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_135 /* Build configuration list for PBXNativeTarget "Alamofire" */;
+			buildPhases = (
+				OBJ_138 /* Sources */,
+				OBJ_156 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Alamofire;
+			productName = Alamofire;
+			productReference = "Alamofire::Alamofire::Product" /* Alamofire.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"Alamofire::SwiftPMPackageDescription" /* AlamofirePackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_158 /* Build configuration list for PBXNativeTarget "AlamofirePackageDescription" */;
+			buildPhases = (
+				OBJ_161 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AlamofirePackageDescription;
+			productName = AlamofirePackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"TVDB::SwiftPMPackageDescription" /* TVDBPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_258 /* Build configuration list for PBXNativeTarget "TVDBPackageDescription" */;
+			buildPhases = (
+				OBJ_261 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TVDBPackageDescription;
+			productName = TVDBPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"TVDB::TVDB" /* TVDB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_164 /* Build configuration list for PBXNativeTarget "TVDB" */;
+			buildPhases = (
+				OBJ_167 /* Sources */,
+				OBJ_254 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_256 /* PBXTargetDependency */,
+			);
+			name = TVDB;
+			productName = TVDB;
+			productReference = "TVDB::TVDB::Product" /* TVDB.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		OBJ_1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 9999;
+				LastUpgradeCheck = 9999;
+			};
+			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "TVDB" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = OBJ_5 /*  */;
+			productRefGroup = OBJ_125 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				"Alamofire::Alamofire" /* Alamofire */,
+				"Alamofire::SwiftPMPackageDescription" /* AlamofirePackageDescription */,
+				"TVDB::TVDB" /* TVDB */,
+				"TVDB::SwiftPMPackageDescription" /* TVDBPackageDescription */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		OBJ_138 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_139 /* AFError.swift in Sources */,
+				OBJ_140 /* Alamofire.swift in Sources */,
+				OBJ_141 /* DispatchQueue+Alamofire.swift in Sources */,
+				OBJ_142 /* MultipartFormData.swift in Sources */,
+				OBJ_143 /* NetworkReachabilityManager.swift in Sources */,
+				OBJ_144 /* Notifications.swift in Sources */,
+				OBJ_145 /* ParameterEncoding.swift in Sources */,
+				OBJ_146 /* Request.swift in Sources */,
+				OBJ_147 /* Response.swift in Sources */,
+				OBJ_148 /* ResponseSerialization.swift in Sources */,
+				OBJ_149 /* Result.swift in Sources */,
+				OBJ_150 /* ServerTrustPolicy.swift in Sources */,
+				OBJ_151 /* SessionDelegate.swift in Sources */,
+				OBJ_152 /* SessionManager.swift in Sources */,
+				OBJ_153 /* TaskDelegate.swift in Sources */,
+				OBJ_154 /* Timeline.swift in Sources */,
+				OBJ_155 /* Validation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_161 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_162 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_167 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_168 /* API.swift in Sources */,
+				OBJ_169 /* APIClient.swift in Sources */,
+				OBJ_170 /* APIClientError.swift in Sources */,
+				OBJ_171 /* APIRequest.swift in Sources */,
+				OBJ_172 /* APIResponse.swift in Sources */,
+				OBJ_173 /* APIResult.swift in Sources */,
+				OBJ_174 /* APIService.swift in Sources */,
+				OBJ_175 /* AnyCodable.swift in Sources */,
+				OBJ_176 /* Coding.swift in Sources */,
+				OBJ_177 /* TVDBAuth.swift in Sources */,
+				OBJ_178 /* TVDBBasicEpisode.swift in Sources */,
+				OBJ_179 /* TVDBConflict.swift in Sources */,
+				OBJ_180 /* TVDBEpisode.swift in Sources */,
+				OBJ_181 /* TVDBEpisodeDataQueryParams.swift in Sources */,
+				OBJ_182 /* TVDBEpisodeLanguageInfo.swift in Sources */,
+				OBJ_183 /* TVDBEpisodeRecordData.swift in Sources */,
+				OBJ_184 /* TVDBFilterKeys.swift in Sources */,
+				OBJ_185 /* TVDBJSONErrors.swift in Sources */,
+				OBJ_186 /* TVDBLanguage.swift in Sources */,
+				OBJ_187 /* TVDBLanguageData.swift in Sources */,
+				OBJ_188 /* TVDBLinks.swift in Sources */,
+				OBJ_189 /* TVDBNotAuthorized.swift in Sources */,
+				OBJ_190 /* TVDBNotFound.swift in Sources */,
+				OBJ_191 /* TVDBSeries.swift in Sources */,
+				OBJ_192 /* TVDBSeriesActors.swift in Sources */,
+				OBJ_193 /* TVDBSeriesActorsData.swift in Sources */,
+				OBJ_194 /* TVDBSeriesData.swift in Sources */,
+				OBJ_195 /* TVDBSeriesEpisodes.swift in Sources */,
+				OBJ_196 /* TVDBSeriesEpisodesQuery.swift in Sources */,
+				OBJ_197 /* TVDBSeriesEpisodesQueryParams.swift in Sources */,
+				OBJ_198 /* TVDBSeriesEpisodesSummary.swift in Sources */,
+				OBJ_199 /* TVDBSeriesImageQueryResult.swift in Sources */,
+				OBJ_200 /* TVDBSeriesImageQueryResults.swift in Sources */,
+				OBJ_201 /* TVDBSeriesImagesCount.swift in Sources */,
+				OBJ_202 /* TVDBSeriesImagesCounts.swift in Sources */,
+				OBJ_203 /* TVDBSeriesImagesQueryParam.swift in Sources */,
+				0FAAE8CD230D449D004A2B39 /* Model+Extension.swift in Sources */,
+				OBJ_204 /* TVDBSeriesImagesQueryParams.swift in Sources */,
+				OBJ_205 /* TVDBSeriesSearchResult.swift in Sources */,
+				OBJ_206 /* TVDBSeriesSearchResults.swift in Sources */,
+				OBJ_207 /* TVDBToken.swift in Sources */,
+				OBJ_208 /* TVDBUpdate.swift in Sources */,
+				OBJ_209 /* TVDBUpdateData.swift in Sources */,
+				OBJ_210 /* TVDBUpdateDataQueryParams.swift in Sources */,
+				OBJ_211 /* TVDBUser.swift in Sources */,
+				OBJ_212 /* TVDBUserData.swift in Sources */,
+				OBJ_213 /* TVDBUserFavorites.swift in Sources */,
+				OBJ_214 /* TVDBUserFavoritesData.swift in Sources */,
+				OBJ_215 /* TVDBUserRatings.swift in Sources */,
+				OBJ_216 /* TVDBUserRatingsData.swift in Sources */,
+				OBJ_217 /* TVDBUserRatingsDataNoLinks.swift in Sources */,
+				OBJ_218 /* TVDBUserRatingsQueryParams.swift in Sources */,
+				OBJ_219 /* RequestBehaviour.swift in Sources */,
+				OBJ_220 /* GetRefreshToken.swift in Sources */,
+				OBJ_221 /* PostLogin.swift in Sources */,
+				OBJ_222 /* GetEpisodesById.swift in Sources */,
+				OBJ_223 /* GetLanguages.swift in Sources */,
+				OBJ_224 /* GetLanguagesById.swift in Sources */,
+				OBJ_225 /* GetSearchSeries.swift in Sources */,
+				OBJ_226 /* GetSearchSeriesParams.swift in Sources */,
+				OBJ_227 /* GetSeriesById.swift in Sources */,
+				OBJ_228 /* GetSeriesByIdActors.swift in Sources */,
+				OBJ_229 /* GetSeriesByIdEpisodes.swift in Sources */,
+				OBJ_230 /* GetSeriesByIdEpisodesQuery.swift in Sources */,
+				OBJ_231 /* GetSeriesByIdEpisodesQueryParams.swift in Sources */,
+				OBJ_232 /* GetSeriesByIdEpisodesSummary.swift in Sources */,
+				OBJ_233 /* GetSeriesByIdFilter.swift in Sources */,
+				OBJ_234 /* GetSeriesByIdFilterParams.swift in Sources */,
+				OBJ_235 /* GetSeriesByIdImages.swift in Sources */,
+				OBJ_236 /* GetSeriesByIdImagesQuery.swift in Sources */,
+				OBJ_237 /* GetSeriesByIdImagesQueryParams.swift in Sources */,
+				OBJ_238 /* HeadSeriesById.swift in Sources */,
+				OBJ_239 /* GetUpdatedQuery.swift in Sources */,
+				OBJ_240 /* GetUpdatedQueryParams.swift in Sources */,
+				OBJ_241 /* DeleteUserFavoritesById.swift in Sources */,
+				OBJ_242 /* DeleteUserRatingsByItemTypeByItemId.swift in Sources */,
+				OBJ_243 /* GetUser.swift in Sources */,
+				OBJ_244 /* GetUserFavorites.swift in Sources */,
+				OBJ_245 /* GetUserRatings.swift in Sources */,
+				OBJ_246 /* GetUserRatingsQuery.swift in Sources */,
+				OBJ_247 /* GetUserRatingsQueryParams.swift in Sources */,
+				OBJ_248 /* PutUserFavoritesById.swift in Sources */,
+				OBJ_249 /* PutUserRatingsByItemTypeByItemIdByItemRating.swift in Sources */,
+				OBJ_250 /* TVDBClient+UserDefaults.swift in Sources */,
+				OBJ_251 /* TVDBClient.swift in Sources */,
+				OBJ_252 /* TVDBModels+Extension.swift in Sources */,
+				OBJ_253 /* TVDBRequestBehaviour.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_261 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_262 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		OBJ_256 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Alamofire::Alamofire" /* Alamofire */;
+			targetProxy = 0FAAE8B9230D4401004A2B39 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		OBJ_136 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = TVDB.xcodeproj/Alamofire_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Alamofire;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = Alamofire;
+			};
+			name = Debug;
+		};
+		OBJ_137 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = TVDB.xcodeproj/Alamofire_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Alamofire;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = Alamofire;
+			};
+			name = Release;
+		};
+		OBJ_159 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4.2 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 4.2";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		OBJ_160 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4.2 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 4.2";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		OBJ_165 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = TVDB.xcodeproj/TVDB_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = TVDB;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = TVDB;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_166 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = TVDB.xcodeproj/TVDB_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = TVDB;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = TVDB;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_259 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		OBJ_260 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		OBJ_3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"SWIFT_PACKAGE=1",
+					"DEBUG=1",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE DEBUG";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USE_HEADERMAP = NO;
+			};
+			name = Debug;
+		};
+		OBJ_4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"SWIFT_PACKAGE=1",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				USE_HEADERMAP = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		OBJ_135 /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_136 /* Debug */,
+				OBJ_137 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_158 /* Build configuration list for PBXNativeTarget "AlamofirePackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_159 /* Debug */,
+				OBJ_160 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_164 /* Build configuration list for PBXNativeTarget "TVDB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_165 /* Debug */,
+				OBJ_166 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_2 /* Build configuration list for PBXProject "TVDB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_3 /* Debug */,
+				OBJ_4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_258 /* Build configuration list for PBXNativeTarget "TVDBPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_259 /* Debug */,
+				OBJ_260 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = OBJ_1 /* Project object */;
+}
