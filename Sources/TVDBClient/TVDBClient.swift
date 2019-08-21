@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import TVDB
 
 
 /// Documentation of the API
@@ -24,14 +23,14 @@ public final class TVDBClient {
     self.userkey = userkey
     self.username = username
   }
-        
+  
   private func getLoginTokenRequest(_ completion : (() -> ())?)  {
     let body = TVDBAuth(apikey: self.apikey, userkey: self.userkey, username: self.username)
     let getLoginTokenRequest = TVDB.Authentication.PostLogin.Request(body: body)
     
     apiClient.makeRequest(getLoginTokenRequest) { apiResponse in
       if let obj = try? apiResponse.result.get(), let token = obj.success?.token {
-		print("token: \(token)")
+        print("token: \(token)")
         UserDefaults.standard.JWTtoken = token
       }
       completion?()

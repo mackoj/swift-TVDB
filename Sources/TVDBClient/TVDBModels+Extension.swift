@@ -7,10 +7,9 @@
 //
 
 import Foundation
-import TVDB
 
 extension TVDBSeries {
-  var bannerImageURL : URL? {
+  public var bannerImageURL : URL? {
     get {
       if let banner = banner {
         return URL(string: "https://www.thetvdb.com/banners/\(banner)")
@@ -21,10 +20,21 @@ extension TVDBSeries {
 }
 
 extension TVDBSeriesActorsData {
-  var imageURL : URL? {
+  public var imageURL : URL? {
     get {
       if let image = image {
         return URL(string: "https://www.thetvdb.com/banners/\(image)")
+      }
+      return nil
+    }
+  }
+}
+
+extension TVDBSeriesSearchResult {
+  public var bannerImageURL : URL? {
+    get {
+      if let banner = banner {
+        return URL(string: "https://www.thetvdb.com/banners/\(banner)")
       }
       return nil
     }

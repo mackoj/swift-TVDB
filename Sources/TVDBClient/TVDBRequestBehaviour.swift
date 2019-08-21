@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import TVDB
 
 struct TVDBRequestBehaviour : RequestBehaviour {
   func modifyRequest(request: AnyRequest, urlRequest: URLRequest) -> URLRequest {
