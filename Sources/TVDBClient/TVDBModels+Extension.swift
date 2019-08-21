@@ -11,7 +11,7 @@ import Foundation
 extension TVDBSeries {
   public var bannerImageURL : URL? {
     get {
-      if let banner = banner {
+      if let banner = banner, banner.count > 0 {
         return URL(string: "https://www.thetvdb.com/banners/\(banner)")
       }
       return nil
@@ -22,7 +22,7 @@ extension TVDBSeries {
 extension TVDBSeriesActorsData {
   public var imageURL : URL? {
     get {
-      if let image = image {
+      if let image = image, image.count > 0 {
         return URL(string: "https://www.thetvdb.com/banners/\(image)")
       }
       return nil
@@ -33,7 +33,7 @@ extension TVDBSeriesActorsData {
 extension TVDBSeriesSearchResult {
   public var bannerImageURL : URL? {
     get {
-      if let banner = banner {
+      if let banner = banner, banner.count > 0 {
         return URL(string: "https://www.thetvdb.com/banners/\(banner)")
       }
       return nil
