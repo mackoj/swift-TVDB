@@ -40,3 +40,22 @@ extension TVDBSeriesSearchResult {
     }
   }
 }
+
+extension TVDBSeriesImageQueryResult {
+  public var thumbnailImageURL : URL? {
+    get {
+      if let thumbnail = thumbnail, thumbnail.count > 0 {
+        return URL(string: "https://www.thetvdb.com/banners/\(thumbnail)")
+      }
+      return nil
+    }
+  }
+  public var fileNameImageURL : URL? {
+    get {
+      if let fileName = fileName, fileName.count > 0 {
+        return URL(string: "https://www.thetvdb.com/banners/\(fileName)")
+      }
+      return nil
+    }
+  }
+}
