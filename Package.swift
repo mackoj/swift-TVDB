@@ -4,7 +4,7 @@ import PackageDescription
 
 let package = Package(
     name: "TVDB",
-	platforms: [.iOS(.v12)],
+	platforms: [.iOS(.v12), .macOS(.v10_15)],
     products: [
         .library(name: "TVDB", targets: ["TVDB"])
     ],
