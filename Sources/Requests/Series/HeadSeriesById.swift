@@ -4,7 +4,7 @@
 //
 
 import Foundation
-
+/*
 extension TVDB.Series {
 
     /** Returns header information only about the given series ID. */
@@ -55,7 +55,7 @@ extension TVDB.Series {
         }
 
         public enum Response: APIResponseValue, CustomStringConvertible, CustomDebugStringConvertible {
-            public typealias SuccessType = Void
+            public typealias SuccessType = AnyCodable?
 
             /** Series header information. Good for getting the Last-Updated header to find out when the series was last modified. */
             case status200
@@ -121,3 +121,4 @@ extension TVDB.Series {
         }
     }
 }
+*/
