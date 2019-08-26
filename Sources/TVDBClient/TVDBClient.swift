@@ -18,9 +18,9 @@ public final class TVDBClient {
   let userkey: String
   let username: String
   
-  public init(apikey: String, userkey: String, username: String) {
+  public init(apikey: String, uniqueID: String, username: String) {
     self.apikey = apikey
-    self.userkey = userkey
+    self.userkey = uniqueID
     self.username = username
   }
   
