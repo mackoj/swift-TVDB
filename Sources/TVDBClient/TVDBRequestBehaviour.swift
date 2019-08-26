@@ -18,10 +18,10 @@ struct TVDBRequestBehaviour : RequestBehaviour {
     return newURLRequest
   }
   
-  func beforeSend(request: AnyRequest) {
-    if let requestURL = try? request.createURLRequest(baseURL: "https://api.thetvdb.com") {
-      let fullURL = requestURL.url?.absoluteString ?? ""
-      print(fullURL)
-    }
-  }
+//  func beforeSend(request: AnyRequest) {
+//    if let requestURL = try? request.createURLRequest(baseURL: "https://api.thetvdb.com") {
+//      let fullURL = requestURL.url?.absoluteString ?? ""
+//      print(fullURL)
+//    }
+//  }
 }

@@ -42,7 +42,7 @@ public final class TVDBClient {
   
   private func addAsyncToken<T>(request: APIRequest<T>, completion: @escaping (APIResponse<T>) -> Void) {
     getLoginTokenRequest {
-      self.makeRequest(request: request, completion: completion)
+      _ = self.makeRequest(request: request, completion: completion)
     }
   }
   
