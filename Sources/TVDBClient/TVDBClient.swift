@@ -24,11 +24,11 @@ public final class TVDBClient {
     self.username = username
   }
   
-  private func getLoginTokenRequest(_ completion : (() -> ())?)  {
+  private func getLoginTokenRequest(_ completion : (() -> ())?) -> CancellableRequest? {
     let body = TVDBAuth(apikey: self.apikey, userkey: self.userkey, username: self.username)
     let getLoginTokenRequest = TVDB.Authentication.PostLogin.Request(body: body)
     
-    apiClient.makeRequest(getLoginTokenRequest) { apiResponse in
+    return apiClient.makeRequest(getLoginTokenRequest) { apiResponse in
       if let obj = try? apiResponse.result.get(), let token = obj.success?.token {
         print("Token")
         print("-----")
@@ -40,8 +40,8 @@ public final class TVDBClient {
     }
   }
   
-  private func addAsyncToken<T>(request: APIRequest<T>, completion: @escaping (APIResponse<T>) -> Void) {
-    getLoginTokenRequest {
+  private func addAsyncToken<T>(request: APIRequest<T>, completion: @escaping (APIResponse<T>) -> Void) -> CancellableRequest? {
+    return getLoginTokenRequest {
       _ = self.makeRequest(request: request, completion: completion)
     }
   }
@@ -49,12 +49,14 @@ public final class TVDBClient {
   public func makeRequest<T>(request: APIRequest<T>, completion: @escaping (APIResponse<T>) -> Void) -> CancellableRequest?  {
     let burrito : (APIResponse<T>) -> Void = { apiResponse in
       if apiResponse.urlResponse?.statusCode == 401 {
-        self.addAsyncToken(request: request, completion: completion)
+        _ = self.addAsyncToken(request: request, completion: completion)
         return
       }
       completion(apiResponse)
     }
-    
+//    if UserDefaults.standard.JWTtoken == nil {
+//      return self.addAsyncToken(request: request, completion: burrito)
+//    }
     return apiClient.makeRequest(request, complete: burrito)
   }  
 }
