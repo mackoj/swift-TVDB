@@ -46,7 +46,7 @@ public final class TVDBClient {
     }
   }
   
-  public func makeRequest<T>(request: APIRequest<T>, completion: @escaping (APIResponse<T>) -> Void)  {
+  public func makeRequest<T>(request: APIRequest<T>, completion: @escaping (APIResponse<T>) -> Void) -> CancellableRequest?  {
     let burrito : (APIResponse<T>) -> Void = { apiResponse in
       if apiResponse.urlResponse?.statusCode == 401 {
         self.addAsyncToken(request: request, completion: completion)
@@ -55,6 +55,6 @@ public final class TVDBClient {
       completion(apiResponse)
     }
     
-    apiClient.makeRequest(request, complete: burrito)
-  }
+    return apiClient.makeRequest(request, complete: burrito)
+  }  
 }
