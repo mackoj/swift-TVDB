@@ -4,7 +4,7 @@ import PackageDescription
 
 let package = Package(
     name: "TVDB",
-	platforms: [.iOS(.v12), .macOS(.v10_15)],
+    platforms: [.iOS(.v12)],
     products: [
         .library(name: "TVDB", targets: ["TVDB"])
     ],
@@ -16,5 +16,5 @@ let package = Package(
           "Alamofire",
         ], path: "Sources")
     ],
-	swiftLanguageVersions: [.v4_2, .v5]
+    swiftLanguageVersions: [.v4_2, .v5]
 )
