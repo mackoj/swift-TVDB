@@ -1,6 +1,8 @@
-# TVDBClient
-
 # THIS IS AN EXPERIMENTATION AND SHOULD NOT BE USED IN PRODUCTION CODE
+
+---
+
+# TVDBClient
 
 How to initialise the apiClient
 
